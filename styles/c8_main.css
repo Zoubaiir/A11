@@ -1,0 +1,79 @@
+/* Existing styles remain the same */
+
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    header img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    header h2, header h3 {
+        text-align: center;
+    }
+
+    #nav_menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #nav_menu ul li {
+        float: none;
+        margin: 5px 0;
+    }
+
+    #nav_menu ul li a {
+        width: auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    section, aside {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    article img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer p {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 150%;
+    }
+
+    header h3 {
+        font-size: 100%;
+    }
+
+    #nav_menu ul li a {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    article img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
