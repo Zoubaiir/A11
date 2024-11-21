@@ -166,3 +166,15 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+/* styles for mobile */
+
+#mobile_menu {
+	display: none;
+}
+@media only screen and (max-width:730px) {
+	section h1 {
+		font-size: 125%
+	}
+	section h2, aside hs {
+		font-size: 110%;
+		
