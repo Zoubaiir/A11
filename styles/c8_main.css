@@ -1,81 +1,100 @@
-/* Existing styles remain the same */
+/* Existing CSS */
 
-/* Add Media Queries for responsiveness */
-@media (max-width: 800px) {
-    body {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        border: none;
-    }
+/* the styles for the elements */
+<meta name="viewport" content="width=device-width, initial-scale=1">
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
 
+/* Existing header, nav, section, article, aside, footer styles continue... */
+
+/* Responsive Design Additions */
+
+/* Make body width 100% for smaller screens and remove margin */
+body {
+	width: 100%;
+	padding: 0 15px;
+	border: none;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    /* Adjust header */
     header img {
         float: none;
         display: block;
         margin: 0 auto;
-        padding: 10px 0;
+        padding-bottom: 10px;
     }
-
+    
     header h2, header h3 {
         text-align: center;
     }
-
+    
+    /* Adjust navigation menu for mobile */
     #nav_menu ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     #nav_menu ul li {
         float: none;
-        margin: 5px 0;
+        margin: 5px;
     }
-
     #nav_menu ul li a {
         width: auto;
-        padding: 10px 20px;
-        text-align: center;
+        padding: 0.5em 1em;
     }
 
+    /* Adjust section and aside layout */
     section, aside {
-        width: 100%;
         float: none;
-        padding: 10px;
+        width: 100%;
+        padding: 0;
     }
 
+    /* Adjust article image */
     article img {
         float: none;
         display: block;
-        margin: 10px auto;
-    }
-
-    footer p {
-        padding: 10px;
-        font-size: 0.9em;
+        margin: 0 auto 15px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
-/* Adjust for very small screens (like phones) */
+/* For screens smaller than 480px (very small screens, like phones in portrait) */
 @media (max-width: 480px) {
-    header h2 {
-        font-size: 150%;
+    /* Adjust section and aside font sizes */
+    section h2, aside h2 {
+        font-size: 120%;
     }
 
-    header h3 {
-        font-size: 100%;
+    /* Make navigation links stack vertically */
+    #nav_menu ul {
+        flex-direction: column;
     }
-
-    #nav_menu ul li a {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-
-    article img {
+    #nav_menu ul li {
         width: 100%;
-        height: auto;
+        text-align: center;
     }
-
-    footer p {
-        font-size: 0.8em;
+    #nav_menu ul li a {
+        width: 100%;
+        padding: 1em 0;
     }
 }
