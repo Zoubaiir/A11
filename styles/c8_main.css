@@ -210,7 +210,7 @@ footer p {
 		float: none;
 	}
 	header{
-		text align: center;
+		text-align: center;
 	}
 	section{
 		float: none;
@@ -234,7 +234,7 @@ footer p {
 		display: block;
 	}
 	.slicknav_menu{
-		background-color: #800000 |imortant;
+		background-color: #800000 !important;
 	}
 }
 @media only screen and (max-width:415px){
